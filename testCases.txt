@@ -1,0 +1,21 @@
+// Test One
+{
+  "code": "#include <iostream>\nusing namespace std;\nint main() {\n  int num1, num2;\n  cin >> num1 >> num2;\n  cout << \"Sum: \" << num1 + num2 << endl;\n  cout << \"Difference: \" << num1 - num2 << endl;\n  cout << \"Product: \" << num1 * num2 << endl;\n  cout << \"Quotient: \" << static_cast<double>(num1) / num2 << endl;\n  return 0;\n}",
+  "testCases": [
+    { "input": "5 3", "expectedOutput": "Sum: 8\nDifference: 2\nProduct: 15\nQuotient: 1.66667" },
+    { "input": "10 2", "expectedOutput": "Sum: 12\nDifference: 8\nProduct: 20\nQuotient: 5" },
+    { "input": "7 0", "expectedOutput": "Sum: 7\nDifference: 7\nProduct: 0\nQuotient: inf" }
+  ]
+}
+
+// Test Two
+{
+  "code": "#include <iostream>\nusing namespace std;\nint main() {\n  int n;\n  cin >> n;\n  cout << n * 2;\n  return 0;\n}",
+  "testCases": [
+    { "input": "5", "expectedOutput": "10" },
+    { "input": "3", "expectedOutput": "6" },
+    { "input": "10", "expectedOutput": "20" },
+    { "input": "2", "expectedOutput": "4" },
+    { "input": "12", "expectedOutput": "6" }
+  ]
+}
